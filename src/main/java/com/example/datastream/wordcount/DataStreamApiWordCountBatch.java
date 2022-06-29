@@ -16,7 +16,8 @@ public class DataStreamApiWordCountBatch {
 
     public static void main(String[] args) throws Exception {
 
-
+        // 运行时请指定参数 -input
+        // 如： -input d:\data\words.txt
         ParameterTool parameterFromArgs = ParameterTool.fromArgs(args);
         String input = parameterFromArgs.getRequired("input");
 
